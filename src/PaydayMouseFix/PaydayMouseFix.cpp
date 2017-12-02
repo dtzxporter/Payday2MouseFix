@@ -41,7 +41,7 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 			DefWindowProc(hwnd, uMsg, wParam, lParam);
 		}
 	}
-	else if (uMsg == WM_LBUTTONUP || uMsg == WM_LBUTTONDBLCLK)
+	else if (uMsg == WM_LBUTTONUP || uMsg == WM_LBUTTONDBLCLK || uMsg == WM_RBUTTONUP || uMsg == WM_RBUTTONDBLCLK)
 	{
 		// Attempt to re-focus window when focus was lost
 		if (!WindowHasFocus && !IsClosingState)
